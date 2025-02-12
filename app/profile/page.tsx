@@ -32,7 +32,7 @@ const Dashboard = () => {
     return (
         <div className="min-h-screen max-w-screen-xl mx-auto flex">
            <div className="absolute flex items-center   w-full left-0  bg-background top-0  mx-auto ">
-            <div className="w-full gap-2  fixed mt-14 bg-background flex flex-col items-end max-xl:px-20 py-2 "><div className="flex items-center w-full px-36 justify-between"><h2>Codex365</h2> <ModeToggle /></div><Separator /></div></div> 
+            <div className="w-full gap-2  fixed mt-14 bg-background flex flex-col items-end max-xl:px-20 py-2 "><div className="flex items-center w-full px-36 justify-between"><h2 className="text-xl font-extrabold tracking-tighter">Codex365</h2> <ModeToggle /></div><Separator /></div></div> 
             <ScrollArea className="w-56 py-12 ">
                 <div className="p-6 fixed ">
            
