@@ -57,9 +57,9 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               {/* <h3 className="md:hidden flex-1 mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
                 {item.title}
               </h3> */}
-              <div className="grid grid-cols-1 md:grid-cols-2 p-2 gap-2  w-full">
+              <div className="grid grid-cols-1 md:grid-cols-2 p-2 gap-4   w-full">
                 {item.content.map((child, idx) => (
-                  <div key={idx} className="w-full break-words ">
+                  <div key={idx} className="w-full  break-words ">
                     {child}
                   </div>
                 ))}

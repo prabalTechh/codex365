@@ -12,7 +12,7 @@ interface Iprops{
 
 const Cardsss = ({src,title,description}:Iprops) => {
     return ( 
-        <Card className="max-w-fit flex flex-col items-center justify-center mx-4  ">
+        <Card className=" flex flex-col items-center justify-center   ">
         <Image src={src} alt="feImage" height={400} width={400}  objectFit="cover" className="mt-5 rounded-lg" />
         <CardContent className="p-3">
             {/* Frontend Development */}

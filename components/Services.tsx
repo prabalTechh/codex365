@@ -31,9 +31,9 @@ const Services = () => {
   ];
 
   return (
-    <div className="p-4">
+    <div className="py-12 w-full">
       <h1 className="text-xl font-bold mb-6">What I Can Do For You</h1>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col  ml-8  gap-6">
         {cardsData.map((card, index) => (
           <Cardsss
             key={index}
