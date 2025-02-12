@@ -22,12 +22,12 @@ import Aws from "@/public/devops/Aws";
 import DigitalOcean from "@/public/devops/DigitalOcean";
 import Docker from "@/public/devops/Docker";
 import Git from "@/public/devops/Git";
-import Linux from "@/public/devops/Linux";
+// import Linux from "@/public/devops/Linux";
 import Nginx from "@/public/devops/Nginx";
 import Ubuntu from "@/public/devops/Ubuntu";
 import Vercel from "@/public/devops/Vercel";
 import Ethereum from "@/public/Web3/Etherium";
-import HardHat from "@/public/Web3/Hardhat";
+// import HardHat from "@/public/Web3/Hardhat";
 import Solana from "@/public/Web3/Solana";
 const data = [
     {
@@ -62,9 +62,9 @@ const data = [
     },
     { title: "Database", content: [<Mongodb height={40} width={40} />, <Postgres height={40} width={40} />, <Sql height={40} width={40} />, <Firebase height={40} width={40} />] },
     { title: "DevOps ", content: [
-        <Aws height={40} width={40} />, <DigitalOcean height={40} width={40}/>, <Docker height={40} width={40}/>, <Git height={40} width={40}/> , <Linux height={40} width={40}/>, <Nginx height={40} width={40}/> , <Ubuntu height={40} width={40}/>, <Vercel height={40} width={40}/>
+        <Aws height={40} width={40} />, <DigitalOcean height={40} width={40}/>, <Docker height={40} width={40}/>, <Git height={40} width={40}/> ,  <Nginx height={40} width={40}/> , <Ubuntu height={40} width={40}/>, <Vercel height={40} width={40}/>
     ] },
-    {title:"Web3" , content:[<Ethereum height={40} widht={40}/> , <HardHat height={40} widht={40} /> , <Solana height={40} widht={40}/>] }
+    {title:"Web3" , content:[<Ethereum height={40} widht={40}/>  , <Solana height={40} widht={40}/>] }
 ]
 
 const Skills = () => {

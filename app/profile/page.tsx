@@ -37,7 +37,7 @@ const Dashboard = () => {
                 <div className="p-6 fixed ">
            
                     {Object.keys(introData).map((key) => (
-                        <div>
+                        <div key={key}>
                             <button
                                 key={key}
                                 className="text-xs pl-6  py-2 w-full text-left hover:bg-gray-300 hover:text-black hover:m-1 "
