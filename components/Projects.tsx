@@ -2,7 +2,7 @@ import CardsTwo from "./Card2";
 
 
 const Projects = () => {
-    return (<div className="py-6 flex flex-col gap-5">
+    return (<div className="py-6 flex flex-col gap-8">
         <h1 className="py-2 text-lg font-semibold">My Work</h1>
         <CardsTwo image="/eshop.png" header="E-shop" content={["nextjs", "Typescript", "MongoDb", "Prisma", "nextAuth", "Stripe",]} description="
 Built a feature-rich ecommerce platform from scratch using Next.js, React, TypeScript, Tailwind CSS, Prisma, and MongoDB. Designed a dynamic frontend, implemented secure user authentication, optimized database queries, and deployed the application for production. This project showcases expertise in full-stack development, scalable architecture, and modern web technologies." onClick={() => { }} />

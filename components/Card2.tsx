@@ -13,7 +13,7 @@ interface IProps {
 
 const CardsTwo = ({ image, header, content, description, onClick }: IProps) => {
     return (
-        <Card className="flex flex-col p-4 gap-4 items-center border rounded-lg shadow-md">
+        <Card className="flex flex-col p-4 gap-4 items-center border border-zinc-800 rounded-lg shadow-md">
             <Image 
                 src={image} 
                 alt={header} 
