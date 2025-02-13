@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="min-h-screen dark:bg-[#181c25] ">
       {/* Hero Section */}
-      <span className="absolute right-28 z-20 top-5"><ModeToggle  /></span>
+      <span className="absolute right-2 md:right-28 z-20 top-5"><ModeToggle  /></span>
       <section className="container mx-auto px-6  pb-10 pt-2 flex flex-col items-center text-center">
 
         <div className="flex items-center  justify-center ">
@@ -22,15 +22,15 @@ export default function Home() {
           <div className="min-h-screen w-56 dark:bg-gradient-to-l from-[#181c25] to-transparent absolute right-0"></div>
         </div>
 
-        <div className=" ">
-          <div className="flex h-full relative bottom-14 gap-4">
+        <div className=" pt-4 ">
+          <div className="flex h-full relative  gap-4">
             <Button size="sm" onClick={() => router.push('/profile')} className="max-w-64 " >Get Started</Button>
             <Button size="sm" variant="outline" className="max-w-64" >Learn More</Button>
           </div>
 
 
         </div>
-        <div className="container mx-auto px-6">
+        <div className="container py-10 mx-auto px-6">
           <h1 className="text-5xl mx-10 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text     font-bold tracking-tight mb-8 ">
             Transforming Ideas <br /> into <br />
             <span className="text-primary"> Digital Reality</span>
