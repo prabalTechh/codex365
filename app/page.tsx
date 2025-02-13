@@ -31,7 +31,7 @@ export default function Home() {
 
         </div>
         <div className="container py-10 mx-auto px-6">
-          <h1 className="text-5xl mx-10 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text     font-bold tracking-tight mb-8 ">
+          <h1 className="text-4xl text-center md:text-5xl  bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text     font-bold tracking-tight mb-8 ">
             Transforming Ideas <br /> into <br />
             <span className="text-primary"> Digital Reality</span>
           </h1>
