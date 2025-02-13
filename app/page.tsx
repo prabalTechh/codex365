@@ -17,9 +17,9 @@ export default function Home() {
       <section className="container mx-auto px-6  pb-10 pt-2 flex flex-col items-center text-center">
 
         <div className="flex items-center  justify-center ">
-          <div className="min-h-screen w-56 dark:bg-gradient-to-l from-[#181c25] to-transparent absolute left-0"></div>
+          <div className="hidden md:block min-h-screen w-56 dark:bg-gradient-to-l from-[#181c25] to-transparent absolute left-0"></div>
           <Image src="/background.webp" width={1200} height={1000} alt="bg" className="blur-0 rounded-full" />
-          <div className="min-h-screen w-56 dark:bg-gradient-to-l from-[#181c25] to-transparent absolute right-0"></div>
+          <div className="hidden md:block min-h-screen w-56 dark:bg-gradient-to-l from-[#181c25] to-transparent absolute right-0"></div>
         </div>
 
         <div className=" pt-4 ">
