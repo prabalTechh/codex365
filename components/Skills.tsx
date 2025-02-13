@@ -31,41 +31,63 @@ import Ethereum from "@/public/Web3/Etherium";
 import Solana from "@/public/Web3/Solana";
 const data = [
     {
-        title: "Language", content: [
-            <JSsvg height={40} widht={40} />,
-            <TSsvg height={40} widht={40} />,
-            <Java h={40} w={40} />,
-            <Solidity height={40} width={40} />,
-            <Rust height={40} width={40} fill="#fafafa" />
-
-
-
-
-        ]
+      title: "Language",
+      content: [
+        { icon: <JSsvg height={40} widht={40} />, name: "JavaScript" },
+        { icon: <TSsvg height={40} widht={40} />, name: "TypeScript" },
+        { icon: <Java h={40} w={40} />, name: "Java" },
+        { icon: <Solidity height={40} width={40} />, name: "Solidity" },
+        { icon: <Rust height={40} width={40} fill="#fafafa" />, name: "Rust" }
+      ]
     },
     {
-        title: "Frontend", content: [
-            <React height={40} width={40} />,
-            <Next height={40} width={40} />,
-            <Tailwind height={40} width={40} />,
-            <Html height={40} width={40} />,
-            <Css height={40} width={40} />
-        ]
+      title: "Frontend",
+      content: [
+        { icon: <React height={40} width={40} />, name: "React" },
+        { icon: <Next height={40} width={40} />, name: "Next.js" },
+        { icon: <Tailwind height={40} width={40} />, name: "Tailwind CSS" },
+        { icon: <Html height={40} width={40} />, name: "HTML5" },
+        { icon: <Css height={40} width={40} />, name: "CSS3" }
+      ]
     },
     {
-        title: "Backend", content: [
-            <Nodejs height={40} width={40} />,
-            <Express height={40} width={40} />,
-            <Prisma height={40} width={40} />,
-            <Graphql height={40} width={40} />
-        ]
+      title: "Backend",
+      content: [
+        { icon: <Nodejs height={40} width={40} />, name: "Node.js" },
+        { icon: <Express height={40} width={40} />, name: "Express.js" },
+        { icon: <Prisma height={40} width={40} />, name: "Prisma" },
+        { icon: <Graphql height={40} width={40} />, name: "GraphQL" }
+      ]
     },
-    { title: "Database", content: [<Mongodb height={40} width={40} />, <Postgres height={40} width={40} />, <Sql height={40} width={40} />, <Firebase height={40} width={40} />] },
-    { title: "DevOps ", content: [
-        <Aws height={40} width={40} />, <DigitalOcean height={40} width={40}/>, <Docker height={40} width={40}/>, <Git height={40} width={40}/> ,  <Nginx height={40} width={40}/> , <Ubuntu height={40} width={40}/>, <Vercel height={40} width={40}/>
-    ] },
-    {title:"Web3" , content:[<Ethereum height={40} widht={40}/>  , <Solana height={40} widht={40}/>] }
-]
+    {
+      title: "Database",
+      content: [
+        { icon: <Mongodb height={40} width={40} />, name: "MongoDB" },
+        { icon: <Postgres height={40} width={40} />, name: "PostgreSQL" },
+        { icon: <Sql height={40} width={40} />, name: "SQL" },
+        { icon: <Firebase height={40} width={40} />, name: "Firebase" }
+      ]
+    },
+    {
+      title: "DevOps",
+      content: [
+        { icon: <Aws height={40} width={40} />, name: "AWS" },
+        { icon: <DigitalOcean height={40} width={40}/>, name: "DigitalOcean" },
+        { icon: <Docker height={40} width={40}/>, name: "Docker" },
+        { icon: <Git height={40} width={40}/>, name: "Git" },
+        { icon: <Nginx height={40} width={40}/>, name: "Nginx" },
+        { icon: <Ubuntu height={40} width={40}/>, name: "Ubuntu" },
+        { icon: <Vercel height={40} width={40}/>, name: "Vercel" }
+      ]
+    },
+    {
+      title: "Web3",
+      content: [
+        { icon: <Ethereum height={40} widht={40}/>, name: "Ethereum" },
+        { icon: <Solana height={40} widht={40}/>, name: "Solana" }
+      ]
+    }
+  ];
 
 const Skills = () => {
     return (<div className="py-6">
