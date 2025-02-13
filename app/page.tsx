@@ -84,14 +84,14 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t">
-        <div className="container mx-auto px-6 py-8">
-          <div className="flex justify-between items-center">
-            <div className="flex items-center gap-2">
+        <div className="container mx-auto px-2 py-4 md:px-6 md/;py-8">
+          <div className="flex justify-between  items-center">
+            <div className="flex items-center p-2 gap-2">
               <Code2 className="h-5 w-5" />
               <span className="font-semibold">Codex365</span>
             </div>
-            <p className="text-sm text-muted-foreground">
-              © 2024 Codex365. All rights reserved.
+            <p className="text-xs md:text-sm text-muted-foreground">
+              © 2024 Codex365.<br/> All rights reserved.
             </p>
           </div>
         </div>
