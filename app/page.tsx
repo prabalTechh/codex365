@@ -41,21 +41,21 @@ export default function Home() {
           </p>
           <h2 className="text-3xl font-bold text-center mb-16">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="p-6 flex flex-col bg-zinc-700 items-center text-center">
+            <Card className="p-6 flex flex-col bg-[#C4D9FF]   dark:bg-zinc-700 items-center text-center">
               <Globe className="h-12 w-12 mb-4 text-primary" />
               <h3 className="text-xl font-semibold mb-2">Web Development</h3>
               <p className="text-muted-foreground">
                 Custom web applications built with modern technologies and best practices.
               </p>
             </Card>
-            <Card className="p-6 flex flex-col items-center bg-zinc-700 text-center">
+            <Card className="p-6 flex flex-col items-center bg-[#C4D9FF]   dark:bg-zinc-700 text-center">
               <Rocket className="h-12 w-12 mb-4 text-primary" />
               <h3 className="text-xl font-semibold mb-2">Startup Solutions</h3>
               <p className="text-muted-foreground">
                 End-to-end technical solutions to help your startup scale efficiently.
               </p>
             </Card>
-            <Card className="p-6 flex flex-col items-center bg-zinc-700 text-center">
+            <Card className="p-6 flex flex-col items-center bg-[#C4D9FF]   dark:bg-zinc-700 text-center">
               <Wallet className="h-12 w-12 mb-4 text-primary" />
               <h3 className="text-xl font-semibold mb-2">Web3 Services</h3>
               <p className="text-muted-foreground">
