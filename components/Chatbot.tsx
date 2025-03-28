@@ -95,7 +95,7 @@ const Chatbot = () => {
       addMessage("Thank you for your query. We'll contact you soon!", 'bot');
       
       try {
-        const response = await fetch("https://codex365-btie.vercel.app/api/contact", {
+        const response = await fetch("/api/contact", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email, question: input })
