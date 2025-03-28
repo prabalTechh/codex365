@@ -11,6 +11,7 @@ import { Separator } from "@/components/ui/separator";
 import { Github, Linkedin, Mail, MapPin, Phone, Twitter, Menu, X } from "lucide-react";
 import Contact from "@/components/ui/Contact";
 import { ModeToggle } from "@/components/theme-toggle";
+import Chatbot from "@/components/Chatbot";
 
 type IntroDataKeys = "Introduction" | "Services" | "Skills" | "Projects" | "Testimonials" | "MyBlogs";
 
@@ -33,10 +34,10 @@ const Dashboard = () => {
     }
 
     return (
-        <div className="min-h-screen max-w-screen-xl mx-auto flex flex-col md:flex-row">
+        <div className="min-h-screen max-w-screen-xl mx-auto  flex flex-col md:flex-row">
             {/* Header */}
             <div className="absolute w-full left-0 bg-background top-0 mx-auto">
-                <div className="w-full fixed bg-background flex items-center justify-between py-2 px-6 md:px-20 lg:px-36">
+                <div className="w-full fixed bg-background flex items-center justify-between py-4 px-6 md:px-20 lg:px-36">
                     <h2 className="text-xl font-extrabold tracking-tighter">Codex365</h2>
                     <div className="flex items-center gap-4">
                         <ModeToggle />
@@ -50,7 +51,7 @@ const Dashboard = () => {
             </div>
 
             {/* Desktop Sidebar */}
-            <ScrollArea className="hidden md:block w-56 py-12">
+            <ScrollArea className="hidden md:block w-56 py-16">
                 <div className="p-6 fixed">
                     {Object.keys(introData).map((key) => (
                         <div key={key}>
@@ -114,19 +115,21 @@ const Dashboard = () => {
                             <h4 className="text-xs text-gray-400">Always up for chat.</h4>
                         </span>
                     </div>
-                    <div className=""><Contact icon={<Mail />} title="Email" desc="Our friendly team is here to help" />
-                        <Contact icon={<MapPin />} title="Location" desc="Ashram, Delhi, India" />
-                        <Contact icon={<Phone />} title="Phone" desc="+91 9644554494" /></div>
+                    <div className=""><Contact link="mailto:id.prabal@gmail.com" icon={<Mail />} title="Email" desc="Our friendly team is here to help"  />
+                        <Contact link="https://maps.app.goo.gl/HEfRWRqYZhAyBigj9" icon={<MapPin />} title="Location" desc="Ashram, Delhi, India" />
+                        <Contact link="" icon={<Phone />} title="Phone" desc="+91 9644554494" /></div>
 
 
                     {/* Social Icons */}
                     <div className="flex items-center justify-center md:justify-start gap-6 text-sm p-5">
-                        <Github />
-                        <Linkedin />
-                        <Twitter />
+                        <a href="https://github.com/prabalTechh"><Github /></a>
+                        <a href="http://linkedin.com/in/prabal-chanpuri/"><Linkedin /></a>
+                        <a href="https://x.com/id_prabal"><Twitter /></a>
                     </div>
                 </div>
             </div>
+
+            <div className=""><Chatbot /></div>
         </div>
     );
 };
