@@ -19,3 +19,11 @@ model user{
   email String 
   question String
 }
+
+model contact {
+  id String @id @default(uuid())
+  name String
+  email String
+  message String
+  createdAt DateTime @default(now())
+}

@@ -52,18 +52,18 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
                 <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700" />
               </div>
-              <h3 className="hidden md:block text-xl md:pl-20 md:text-4xl font-bold text-neutral-500 dark:text-neutral-500">
+              <h3 className=" text-xl pl-20 md:text-2xl font-bold text-neutral-500 dark:text-neutral-500">
                 {item.title}
               </h3>
             </div>
 
             {/* Content Section */}
             <div className="flex items-center min-w-fit">
-              <div className="grid grid-cols-3 md:grid-cols-3 bg-[#e1dbdb] dark:bg-zinc-800 px-3 py-6 rounded-lg gap-4 w-full">
+              <div className="grid grid-cols-3 md:grid-cols-3 bg-[#e1dbdb] dark:bg-zinc-800 px-2 py-6 rounded-lg gap-3 w-full">
                 {item.content.map((skill, idx) => (
                   <div key={idx} className="w-full break-words flex flex-col items-center gap-2">
                     {skill?.icon}
-                    <span className="text-sm text-gray-400 text-center">
+                    <span className="text-xs text-gray-400 text-center">
                       {skill?.name}
                     </span>
                   </div>

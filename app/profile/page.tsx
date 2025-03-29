@@ -74,7 +74,7 @@ const Dashboard = () => {
                 onClick={() => setMobileMenuOpen(false)}
             >
                 <div
-                    className={`fixed top-0 left-0 h-full w-64  shadow-lg transform transition-transform ${mobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+                    className={`fixed top-0 left-0 h-full w-64  shadow-lg transform transition-transform ${mobileMenuOpen ? "translate-x-0 px-2 border-2 bg-black" : "-translate-x-full"
                         }`}
                 >
                     <div className="p-6 flex justify-between items-center">

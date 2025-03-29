@@ -125,7 +125,7 @@ const Chatbot = () => {
       </button>
       
       {chatbotOpen && (
-        <div className="absolute bottom-full transform translate-x-10 right-12 md:left-0 mb-4 w-80 h-96 md:w-96 bg-white dark:bg-gray-800 rounded-lg shadow-2xl border border-gray-200 dark:border-gray-700 backdrop-blur-[1px] flex flex-col">
+        <div className="absolute bottom-full transform translate-x-10 right-12 md:left-0 mb-4 w-80 h-96 md:w-96 bg-white dark:bg-gray-800 z-[99999] rounded-lg shadow-2xl border border-gray-200 dark:border-gray-700 backdrop-blur-[1px] flex flex-col">
           <div className="flex items-center justify-between p-4 border-b border-gray-300 dark:border-gray-700">
             <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
               Chatbot
