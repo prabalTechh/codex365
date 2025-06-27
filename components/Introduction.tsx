@@ -31,15 +31,15 @@ const introSections = [
 
 const Introduction = () => {
   return (
-    <section className="max-w-4xl mx-auto mt-8">
-      <Card>
-        <CardContent className="p-6 space-y-6">
+    <section className="max-w-4xl mx-auto">
+      <Card className="bg-card/50 border-border/50 backdrop-blur-sm ">
+        <CardContent className="p-6 space-y-2 ">
           {introSections.map(({ id, title, content }) => (
-            <div key={id} className="group hover:bg-slate-50 rounded-lg p-4 transition-colors">
-              <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 transition-colors">
+            <div key={id} className="group hover:bg-gradient-to-r hover:from-emerald-500/10 hover:to-cyan-500/10 dark:hover:from-emerald-500/5 dark:hover:to-cyan-500/5 rounded-xl p-4 transition-all duration-200 border border-transparent hover:border-emerald-500/20">
+              <h2 className="text-lg font-semibold text-foreground mb-3 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-200">
                 {title}
               </h2>
-              <IntroData>
+              <IntroData >
                 {content}
               </IntroData>
             </div>

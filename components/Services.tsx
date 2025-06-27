@@ -47,7 +47,7 @@ const Services = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
+        staggerChildren: 0.15
       }
     }
   };
@@ -58,33 +58,57 @@ const Services = () => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.5
+        duration: 0.5,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const headerVariants = {
+    hidden: { x: -30, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
       }
     }
   };
 
   return (
-    <section className="py-12 px-4 max-w-7xl mx-auto">
+    <section className="py-8 px-4 max-w-6xl mx-auto">
       <motion.div
         initial="hidden"
         animate="visible"
         variants={containerVariants}
-        className="space-y-12"
+        className="space-y-10"
       >
-        <motion.h1 
-          variants={itemVariants}
-          className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8 border-b pb-4"
+        {/* Header Section */}
+        <motion.div 
+          variants={headerVariants}
+          className="text-center space-y-4"
         >
-          What I Can Do For You
-        </motion.h1>
+          <h1 className="text-4xl  font-bold bg-gradient-to-r from-emerald-600 via-cyan-600 to-blue-600 dark:from-emerald-400 dark:via-cyan-400 dark:to-blue-500 bg-clip-text text-transparent">
+            What I Can Do For You
+          </h1>
+          <div className="w-24 h-1 bg-gradient-to-r from-emerald-600 via-cyan-600 to-blue-600 dark:from-emerald-400 dark:via-cyan-400 dark:to-blue-500 mx-auto rounded-full"></div>
+          <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Comprehensive development services tailored to bring your ideas to life with cutting-edge technologies and best practices.
+          </p>
+        </motion.div>
 
-        <div className="grid gap-8">
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {servicesData.map((service) => (
             <motion.div 
               key={service.id}
               variants={itemVariants}
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.2 }}
+              whileHover={{ 
+                scale: 1.02,
+                transition: { duration: 0.2, ease: "easeOut" }
+              }}
+              className="group"
             >
               <Cardsss
                 src={service.src}
@@ -94,6 +118,24 @@ const Services = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Call to Action */}
+        <motion.div 
+          variants={itemVariants}
+          className="text-center pt-6"
+        >
+          <div className="inline-flex items-center gap-2 text-muted-foreground hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors cursor-pointer group">
+            <span className="text-sm font-medium">Explore all services</span>
+            <svg 
+              className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </motion.div>
       </motion.div>
     </section>
   );

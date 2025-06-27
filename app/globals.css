@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 @layer base {
@@ -71,19 +76,67 @@ body {
   }
 }
 
+/* Premium Scrollbar Styling */
 ::-webkit-scrollbar {
-  width: 6px; /* Scrollbar width */
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000; /* Scrollbar track */
+  background: hsl(var(--muted));
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888; /* Scrollbar thumb */
-  border-radius: 6px; /* Border radius */
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary) / 0.8));
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Hover effect */
+  background: linear-gradient(135deg, hsl(var(--primary) / 0.9), hsl(var(--primary)));
+  transform: scale(1.1);
+}
+
+::-webkit-scrollbar-corner {
+  background: hsl(var(--muted));
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--primary)) hsl(var(--muted));
+}
+
+/* Smooth scrolling for all elements */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Premium focus styles */
+*:focus-visible {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Premium selection styles */
+::selection {
+  background: hsl(var(--primary) / 0.2);
+  color: hsl(var(--foreground));
+}
+
+::-moz-selection {
+  background: hsl(var(--primary) / 0.2);
+  color: hsl(var(--foreground));
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 }

@@ -63,43 +63,28 @@ const Testimonials = () => {
         variants={containerVariants}
         className="space-y-12"
       >
-        <motion.h1
+        <motion.div
           variants={itemVariants}
-          className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8 border-b pb-4"
+          className="text-center space-y-4"
         >
-          What People Say
-        </motion.h1>
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-emerald-600 via-cyan-600 to-blue-600 dark:from-emerald-400 dark:via-cyan-400 dark:to-blue-500 bg-clip-text text-transparent">
+            What People Say
+          </h1>
+          <div className="w-20 h-1 bg-gradient-to-r from-emerald-600 via-cyan-600 to-blue-600 dark:from-emerald-400 dark:via-cyan-400 dark:to-blue-500 mx-auto rounded-full"></div>
+        </motion.div>
 
-        {/* <div className="grid  gap-8">
-          {testimonialsData.map((testimonial) => (
-            <motion.div
-              key={testimonial.id}
-              variants={itemVariants}
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.2 }}
-              className="bg-white dark:bg-gray-800 shadow-lg p-6 rounded-2xl flex flex-col items-center text-center"
-            >
-              <div className="flex gap-1 mb-2">
-                {Array.from({ length: testimonial.rating }).map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-500" fill="yellow" />
-                ))}
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">
-                "{testimonial.review}"
-              </p>
-              <h4 className="text-lg font-semibold">{testimonial.name}</h4>
-              <span className="text-gray-500 dark:text-gray-400 text-sm">{testimonial.role}</span>
-            </motion.div>
-          ))}
-        </div> */}
-        <div>
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
-          Testimonials Coming Soon
-        </h1>
-        <p className="text-gray-600 dark:text-gray-300 max-w-2xl">
-          We are gathering feedback from our amazing clients. Stay tuned for
-          updates!
-        </p>
+        <div className="text-center space-y-6">
+          <h2 className="text-2xl font-bold text-foreground">
+            Testimonials Coming Soon
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            We are gathering feedback from our amazing clients. Stay tuned for
+            updates!
+          </p>
+          <div className="inline-flex items-center gap-2 text-sm text-muted-foreground">
+            <div className="w-2 h-2 bg-emerald-500 dark:bg-emerald-400 rounded-full animate-pulse"></div>
+            Collecting testimonials from satisfied clients
+          </div>
         </div>
       </motion.div>
     </section>

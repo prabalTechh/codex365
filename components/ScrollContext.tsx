@@ -46,7 +46,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
       {data.map((item, index) => (
-          <div key={index} className="flex flex-col items-end min-w-96 pr-4  pt-10 md:pt-40 md:gap-10">
+          <div key={index} className="flex flex-col items-end min-w-80 pr-4 pt-10 md:pt-40 md:gap-10">
             {/* Timeline Circle and Title */}
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
@@ -58,12 +58,14 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             </div>
 
             {/* Content Section */}
-            <div className="flex items-center min-w-fit">
-              <div className="grid grid-cols-3 md:grid-cols-3 bg-[#e1dbdb] dark:bg-zinc-800 px-3 py-6 rounded-lg gap-4 w-full">
+            <div className="flex items-center min-w-fit w-full">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 bg-[#e1dbdb] dark:bg-zinc-800 px-3 py-6 rounded-lg gap-3 md:gap-4 w-full max-w-4xl">
                 {item.content.map((skill, idx) => (
-                  <div key={idx} className="w-full break-words flex flex-col items-center gap-2">
-                    {skill?.icon}
-                    <span className="text-sm text-gray-400 text-center">
+                  <div key={idx} className="w-full break-words flex flex-col items-center gap-2 p-2">
+                    <div className="flex items-center justify-center">
+                      {skill?.icon}
+                    </div>
+                    <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 text-center font-medium">
                       {skill?.name}
                     </span>
                   </div>
@@ -74,18 +76,6 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         ))}
 
         {/* Scroll Progress Indicator */}
-        <div
-          style={{ height }}
-          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%] mask-image-[linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
-        >
-          <motion.div
-            style={{
-              height: heightTransform,
-              opacity: opacityTransform,
-            }}
-            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
-          />
-        </div>
         <div
           style={{ height }}
           className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%] mask-image-[linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"

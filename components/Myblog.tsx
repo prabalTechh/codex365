@@ -9,12 +9,17 @@ const MyBlogs = () => {
         transition={{ duration: 0.5 }}
         className="space-y-6"
       >
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
+        <h1 className="text-3xl font-bold bg-gradient-to-r from-emerald-600 via-cyan-600 to-blue-600 dark:from-emerald-400 dark:via-cyan-400 dark:to-blue-500 bg-clip-text text-transparent">
           Blogs Coming Soon
         </h1>
-        <p className="text-gray-600 dark:text-gray-300 max-w-2xl">
+        <div className="w-20 h-1 bg-gradient-to-r from-emerald-600 via-cyan-600 to-blue-600 dark:from-emerald-400 dark:via-cyan-400 dark:to-blue-500 mx-auto rounded-full"></div>
+        <p className="text-muted-foreground max-w-2xl">
           I'm currently working on sharing my thoughts and insights. Stay tuned for updates!
         </p>
+        <div className="inline-flex items-center gap-2 text-sm text-muted-foreground">
+          <div className="w-2 h-2 bg-emerald-500 dark:bg-emerald-400 rounded-full animate-pulse"></div>
+          Writing insightful content about technology and development
+        </div>
       </motion.div>
     </section>
   );

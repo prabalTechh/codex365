@@ -1,7 +1,7 @@
-export function TSsvg({widht, height}: {widht: number, height: number}) {
+export function TSsvg({width, height}: {width: number, height: number}) {
     return (
       <svg
-        width={widht}
+        width={width}
         height={height}
         viewBox="0 0 32 32"
         xmlns="http://www.w3.org/2000/svg"
