@@ -12,7 +12,6 @@ import { Separator } from "@/components/ui/separator";
 import { Github, Linkedin, Mail, MapPin, Phone, Twitter, Menu, X } from "lucide-react";
 import Contact from "@/components/ui/Contact";
 import { ModeToggle } from "@/components/theme-toggle";
-import Chatbot from "@/components/Chatbot";
 
 type IntroDataKeys = "Introduction" | "Services" | "Skills" | "Projects" | "Testimonials" | "MyBlogs";
 
@@ -209,20 +208,17 @@ const Dashboard = () => {
 
                                 <div className="space-y-4">
                                     <Contact 
-                                        icon={<Mail className="h-4 w-4" />} 
-                                        title="Email" 
-                                        desc="Our friendly team is here to help" 
-                                    />
+                                        icon={<Mail className="h-4 w-4" />}
+                                        title="Email"
+                                        desc="Our friendly team is here to help" link={""}                                    />
                                     <Contact 
-                                        icon={<MapPin className="h-4 w-4" />} 
-                                        title="Location" 
-                                        desc="Ashram, Delhi, India" 
-                                    />
+                                        icon={<MapPin className="h-4 w-4" />}
+                                        title="Location"
+                                        desc="Ashram, Delhi, India" link={""}                                    />
                                     <Contact 
-                                        icon={<Phone className="h-4 w-4" />} 
-                                        title="Phone" 
-                                        desc="+91 9644554494" 
-                                    />
+                                        icon={<Phone className="h-4 w-4" />}
+                                        title="Phone"
+                                        desc="+91 9644554494" link={""}                                    />
                                 </div>
 
                                 <Separator className="bg-border/50" />
@@ -265,8 +261,6 @@ const Dashboard = () => {
                     </div>
                 </aside>
             </div>
-
-            <div className=""><Chatbot /></div>
         </div>
     );
 };
