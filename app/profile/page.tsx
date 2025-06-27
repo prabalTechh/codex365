@@ -12,6 +12,7 @@ import { Separator } from "@/components/ui/separator";
 import { Github, Linkedin, Mail, MapPin, Phone, Twitter, Menu, X } from "lucide-react";
 import Contact from "@/components/ui/Contact";
 import { ModeToggle } from "@/components/theme-toggle";
+import Chatbot from "@/components/Chatbot";
 
 type IntroDataKeys = "Introduction" | "Services" | "Skills" | "Projects" | "Testimonials" | "MyBlogs";
 
@@ -264,6 +265,8 @@ const Dashboard = () => {
                     </div>
                 </aside>
             </div>
+
+            <div className=""><Chatbot /></div>
         </div>
     );
 };
